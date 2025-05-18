@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,138 +9,180 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/feather-icons"></script>
     <style>
       html {
         scroll-behavior: smooth;
       }
       body {
         font-family: "Inter", sans-serif;
+        background-color: #f9fafb;
+        color: #1f2937;
       }
       h1,
       h2,
-      h3,
-      h4 {
+      h3 {
         font-family: "Playfair Display", serif;
-      }
-      .fade-in {
-        opacity: 0;
-        animation: fadeIn ease 1s forwards;
-      }
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-        }
       }
     </style>
   </head>
-  <body class="bg-white text-gray-900">
+  <body>
     <!-- Navbar -->
-    <header class="fixed top-0 w-full bg-white shadow z-50">
+    <header class="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
       <div
-        class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center"
+        class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <h1 class="text-xl font-semibold">Jasper Ling</h1>
-        <nav class="space-x-4 text-sm">
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#projects" class="hover:underline">Projects</a>
-          <a href="#contact" class="hover:underline">Contact</a>
+        <h1 class="text-lg font-bold tracking-tight">Jasper Ling</h1>
+        <nav class="space-x-6 text-sm font-medium text-gray-600">
+          <a href="#about" class="hover:text-black">About</a>
+          <a href="#projects" class="hover:text-black">Projects</a>
+          <a href="#contact" class="hover:text-black">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="pt-24 max-w-5xl mx-auto px-4">
+    <!-- Main Content -->
+    <main class="pt-28 max-w-4xl mx-auto px-6 space-y-24">
       <!-- Hero -->
-      <section class="text-center py-20 fade-in">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Jasper</h2>
-        <p class="text-lg text-gray-600">Software Engineer & Product Builder</p>
+      <section
+        class="text-center space-y-4 bg-black text-white py-16 rounded-xl shadow-md"
+      >
+        <img
+          src="images/dp.jpg"
+          alt="Jasper Ling"
+          class="w-28 h-28 mx-auto rounded-full object-cover grayscale shadow-lg"
+        />
+        <h2 class="text-5xl font-bold tracking-tight">Jasper Ling</h2>
+        <p class="text-lg text-gray-300">Software Engineer</p>
       </section>
 
       <!-- About -->
-      <section id="about" class="py-16 fade-in">
-        <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-        <p class="text-gray-700 leading-relaxed max-w-2xl">
-          I'm a software engineer passionate about building elegant,
-          user-focused applications. I enjoy solving real problems with clean
-          code and thoughtful design, and I'm exploring the intersection of
-          engineering and product management.
+      <section id="about" class="space-y-4">
+        <h3 class="text-2xl font-semibold">About Me</h3>
+        <p class="text-gray-700 leading-relaxed">
+          I'm a software engineer based in <strong>Singapore</strong>,
+          passionate about building elegant, user-focused applications. I enjoy
+          solving problems with clean code and thoughtful design.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          Outside work, I love bar hopping, sports, and learning about product
+          thinking. I’m interested in blending tech, UX, and strategy into
+          everything I build.
         </p>
       </section>
 
+      <!-- Tech Stack & Certifications -->
+      <section class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <!-- Tech Stack -->
+          <div class="space-y-4">
+            <h4 class="text-xl font-semibold">Tech Stack</h4>
+            <div class="flex flex-wrap gap-3 text-sm text-gray-800">
+              <span class="bg-gray-100 px-3 py-1 rounded-full">HTML</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">CSS</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">JavaScript</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">Node.js</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">Python</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">AWS</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">DynamoDB</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full">React</span>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="space-y-4">
+            <h4 class="text-xl font-semibold">Certifications</h4>
+            <img
+              src="images/aws-certified-cloud-practitioner.png"
+              alt="AWS Certified Cloud Practitioner Certificate"
+              class="w-40 rounded shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- Projects -->
-      <section id="projects" class="py-16 fade-in">
-        <h3 class="text-2xl font-semibold mb-8">Projects</h3>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="border-l-4 border-gray-300 pl-4">
-            <h4 class="text-xl font-semibold">Tendr</h4>
-            <p class="text-gray-600 mt-1">
-              Classy social bar-tracking app with AWS, React & DynamoDB. Share
-              ratings, track visits, and explore bars.
-            </p>
+      <section id="projects" class="space-y-6">
+        <h3 class="text-2xl font-semibold">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Project 1 -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="https://source.unsplash.com/featured/?bar"
+              alt="Bar Tracker"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-lg font-semibold">Bar Tracker</h4>
+              <p class="text-gray-600">
+                A classy social bar-tracking app using AWS, React & DynamoDB.
+                Track, rate, and explore bars with friends.
+              </p>
+            </div>
           </div>
-          <div class="border-l-4 border-gray-300 pl-4">
-            <h4 class="text-xl font-semibold">Workout Logger</h4>
-            <p class="text-gray-600 mt-1">
-              Apple Watch automation to log workout sessions into your calendar
-              with zero effort.
-            </p>
+
+          <!-- Project 2 -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="https://source.unsplash.com/featured/?fitness,watch"
+              alt="Workout Tracker"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-lg font-semibold">Workout Tracker</h4>
+              <p class="text-gray-600">
+                Apple Watch automation that logs workouts into your calendar
+                with zero effort. Built for seamless background tracking.
+              </p>
+            </div>
           </div>
-          <div class="border-l-4 border-gray-300 pl-4">
-            <h4 class="text-xl font-semibold">Budget Tracker</h4>
-            <p class="text-gray-600 mt-1">
-              Mobile-first budgeting tool using AWS Free Tier. Track expenses,
-              income, and trends.
-            </p>
+
+          <!-- Project 3 -->
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img
+              src="https://source.unsplash.com/featured/?finance,expenses"
+              alt="Budget Tracker"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-lg font-semibold">Budget Tracker</h4>
+              <p class="text-gray-600">
+                Lightweight expense tracker with AWS Free Tier. View trends and
+                insights in a mobile-first UI.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="py-16 fade-in">
-        <h3 class="text-2xl font-semibold mb-8 text-center">Contact</h3>
-        <div class="flex justify-center space-x-6 text-gray-700 text-2xl">
-          <a
-            href="mailto:jasper@example.com"
-            target="_blank"
-            aria-label="Email"
-            class="hover:text-blue-600"
+      <section id="contact" class="text-center space-y-4">
+        <h3 class="text-2xl font-semibold">Contact</h3>
+        <p class="text-gray-600">Let’s connect or collaborate:</p>
+        <div class="flex justify-center space-x-6 text-lg text-gray-700">
+          <a href="mailto:jasper@example.com" class="hover:text-blue-600"
+            >Email</a
           >
-            <i data-feather="mail"></i>
-          </a>
           <a
             href="https://github.com/jasperlyf"
             target="_blank"
-            aria-label="GitHub"
             class="hover:text-blue-600"
+            >GitHub</a
           >
-            <i data-feather="github"></i>
-          </a>
           <a
             href="https://www.linkedin.com/in/jasperlyf"
             target="_blank"
-            aria-label="LinkedIn"
-            class="hover:text-blue-600"
+            class="hover:text-blue-600 font-semibold underline"
+            >LinkedIn</a
           >
-            <i data-feather="linkedin"></i>
-          </a>
-          <a
-            href="resume.pdf"
-            target="_blank"
-            aria-label="Resume"
-            class="hover:text-blue-600"
+          <a href="resume.pdf" target="_blank" class="hover:text-blue-600"
+            >Resume</a
           >
-            <i data-feather="file-text"></i>
-          </a>
         </div>
       </section>
     </main>
 
-    <footer class="text-center py-8 text-sm text-gray-500">
+    <footer class="text-center py-12 text-sm text-gray-500 mt-24">
       &copy; 2025 Jasper Ling
     </footer>
-
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>
