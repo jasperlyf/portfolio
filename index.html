@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,154 +15,176 @@
       }
       body {
         font-family: "Inter", sans-serif;
-        background-color: #f9fafb;
+        background-color: #fefefe;
         color: #1f2937;
       }
       h1,
       h2,
-      h3 {
+      h3,
+      h4 {
         font-family: "Playfair Display", serif;
       }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <header class="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
+    <header
+      class="fixed top-0 w-full bg-white backdrop-blur border-b border-gray-200 z-50"
+    >
       <div
-        class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center"
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <h1 class="text-lg font-bold tracking-tight">Jasper Ling</h1>
-        <nav class="space-x-6 text-sm font-medium text-gray-600">
-          <a href="#about" class="hover:text-black">About</a>
-          <a href="#projects" class="hover:text-black">Projects</a>
-          <a href="#contact" class="hover:text-black">Contact</a>
+        <h1 class="text-xl font-bold tracking-tight text-gray-800">
+          Jasper Ling
+        </h1>
+        <nav class="space-x-8 text-sm font-medium text-gray-600">
+          <a href="#about" class="hover:text-blue-600 transition">About</a>
+          <a href="#projects" class="hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
         </nav>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="pt-28 max-w-4xl mx-auto px-6 space-y-24">
+    <main class="pt-32 max-w-6xl mx-auto px-6 space-y-28">
       <!-- Hero -->
-      <section class="text-center space-y-4 py-16 rounded-xl shadow-md">
+      <section class="text-center space-y-6">
         <img
           src="images/dp.jpg"
           alt="Jasper Ling"
-          class="w-28 h-28 mx-auto rounded-full object-cover shadow-lg"
+          class="w-28 h-28 mx-auto rounded-full object-cover shadow-md"
         />
-        <h2 class="text-5xl font-bold tracking-tight">Jasper Ling</h2>
-        <p class="text-lg text-gray-600">Software Engineer</p>
+        <h2 class="text-5xl font-bold tracking-tight text-gray-900">
+          Jasper Ling
+        </h2>
+        <p class="text-lg text-gray-500">
+          Senior Software Engineer · AWS Certified
+        </p>
       </section>
 
-      <!-- About -->
+      <!-- About Me -->
       <section id="about" class="space-y-4">
-        <h3 class="text-2xl font-semibold">About Me</h3>
-        <p class="text-gray-700 leading-relaxed">
-          I'm a software engineer based in <strong>Singapore</strong>,
-          passionate about building elegant, user-focused applications. I enjoy
-          turning complex challenges into clean, efficient solutions through
-          thoughtful design and clean code.
+        <h3 class="text-3xl font-semibold text-gray-800">About Me</h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          I’m a software engineer based in <strong>Singapore</strong> with a
+          strong interest in developing clean, secure, and scalable systems. I
+          thrive on transforming complex problems into practical digital
+          solutions that blend code, UX, and strategy.
         </p>
-        <p class="text-gray-700 leading-relaxed">
-          Outside of work, I enjoy staying active through sports and exploring
-          product thinking. I'm always looking to blend technology, UX, and
-          strategy to create meaningful digital experiences.
+        <p class="text-gray-700 leading-relaxed text-lg">
+          With experience in full-stack development, embedded Linux, IoT/SCADA,
+          and cloud infrastructure, I deliver robust tools and platforms across
+          industries. Outside work, I enjoy sports, tech tinkering, and product
+          ideation.
         </p>
       </section>
 
-      <!-- Tech Stack & Certifications -->
-      <section class="space-y-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <!-- Tech Stack -->
-          <div class="space-y-4">
-            <h4 class="text-xl font-semibold">Tech Stack</h4>
-            <div class="flex flex-wrap gap-3 text-sm text-gray-800">
-              <span class="bg-gray-100 px-3 py-1 rounded-full">HTML</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">CSS</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">JavaScript</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">Node.js</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">Python</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">AWS</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">DynamoDB</span>
-              <span class="bg-gray-100 px-3 py-1 rounded-full">React</span>
-            </div>
+      <!-- Tech Stack & Certification -->
+      <section class="space-y-12">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Tech Stack</h3>
+          <div class="flex flex-wrap gap-4 text-sm text-gray-800">
+            <span class="bg-blue-50 px-3 py-1 rounded-full">C++</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">Python</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">React</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">Tailwind CSS</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">AWS</span>
+            <span class="bg-blue-50 px-3 py-1 rounded-full">Yocto</span>
           </div>
-
-          <!-- Certifications -->
-          <div class="space-y-4">
-            <h4 class="text-xl font-semibold">Certifications</h4>
-            <img
-              src="images/aws-certified-cloud-practitioner.png"
-              alt="AWS Certified Cloud Practitioner Certificate"
-              class="w-40 rounded shadow-md"
-            />
-          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+            Certifications
+          </h3>
+          <img
+            src="images/aws-certified-cloud-practitioner.png"
+            alt="AWS Certified Cloud Practitioner Certificate"
+            class="w-40 rounded shadow-md"
+          />
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="space-y-6">
-        <h3 class="text-2xl font-semibold">Projects</h3>
-        <div class="flex gap-4 overflow-x-auto pb-4">
-          <!-- Project 1 -->
+      <section id="projects" class="space-y-10">
+        <h3 class="text-3xl font-semibold text-gray-800">Projects</h3>
+        <div class="grid gap-8 md:grid-cols-2">
           <div
-            class="min-w-[250px] bg-white border border-gray-200 rounded-lg p-4 shadow opacity-50 pointer-events-none"
+            class="hover:shadow-lg transition border border-gray-100 rounded-xl p-5 bg-white"
           >
-            <h4 class="text-lg font-semibold">Bar Tracker</h4>
-            <p class="text-sm text-gray-600 mt-1">
-              Classy bar-tracking app using AWS, React & DynamoDB.
+            <h4 class="text-xl font-semibold text-gray-900">Bar Tracker</h4>
+            <p class="text-sm text-gray-600 mt-2">
+              A full-stack bar visit log built using <strong>React</strong>,
+              <strong>Node.js</strong>, <strong>MongoDB</strong>, and
+              <strong>AWS</strong>. Includes filtering, rating, and monthly
+              analytics.
+            </p>
+            <ul class="mt-3 text-sm text-gray-600 list-disc list-inside">
+              <li>Authentication using JWT and session storage</li>
+              <li>Responsive UI with mobile-first design</li>
+              <li>Deployed on Vercel (frontend) and Render (backend)</li>
+              <li>Data visualization with chart.js</li>
+            </ul>
+          </div>
+
+          <div
+            class="opacity-50 pointer-events-none border border-gray-100 rounded-xl p-5 bg-gray-50"
+          >
+            <h4 class="text-xl font-semibold text-gray-700">Workout Tracker</h4>
+            <p class="text-sm text-gray-600 mt-2">
+              Sync Apple Watch activity to Google Calendar with webhooks and no
+              manual steps.
             </p>
           </div>
 
-          <!-- Project 2 -->
           <div
-            class="min-w-[250px] bg-white border border-gray-200 rounded-lg p-4 shadow opacity-50 pointer-events-none"
+            class="opacity-50 pointer-events-none border border-gray-100 rounded-xl p-5 bg-gray-50"
           >
-            <h4 class="text-lg font-semibold">Workout Tracker</h4>
-            <p class="text-sm text-gray-600 mt-1">
-              Apple Watch to Calendar automation with no pop-ups.
-            </p>
-          </div>
-
-          <!-- Project 3 -->
-          <div
-            class="min-w-[250px] bg-white border border-gray-200 rounded-lg p-4 shadow opacity-50 pointer-events-none"
-          >
-            <h4 class="text-lg font-semibold">Budget Tracker</h4>
-            <p class="text-sm text-gray-600 mt-1">
-              Expense tracker using AWS Free Tier and mobile-first UI.
+            <h4 class="text-xl font-semibold text-gray-700">Budget Tracker</h4>
+            <p class="text-sm text-gray-600 mt-2">
+              Lightweight budgeting app using Google Sheets backend and
+              mobile-optimized UI.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="text-center space-y-4">
-        <h3 class="text-2xl font-semibold">Contact</h3>
-        <p class="text-gray-600">Let’s connect or collaborate:</p>
-        <div class="flex justify-center space-x-6 text-lg text-gray-700">
-          <a href="mailto:jasperlyf@outlook.com" class="hover:text-blue-600"
+      <section id="contact" class="space-y-6 text-center">
+        <h3 class="text-3xl font-semibold text-gray-800">Contact</h3>
+        <p class="text-gray-600 text-lg">Let’s connect or collaborate:</p>
+        <div class="flex justify-center space-x-8 text-lg text-gray-700">
+          <a
+            href="mailto:jasperlyf@outlook.com"
+            class="hover:text-blue-600 transition"
             >Email</a
           >
           <a
             href="https://github.com/jasperlyf"
             target="_blank"
-            class="hover:text-blue-600"
+            class="hover:text-blue-600 transition"
             >GitHub</a
           >
           <a
             href="https://www.linkedin.com/in/jasperlyf"
             target="_blank"
-            class="hover:text-blue-600 font-semibold underline"
+            class="hover:text-blue-600 transition underline"
             >LinkedIn</a
           >
-          <a href="cv.pdf" target="_blank" class="hover:text-blue-600"
+          <a
+            href="cv.pdf"
+            target="_blank"
+            class="hover:text-blue-600 transition"
             >Resume</a
           >
         </div>
       </section>
     </main>
 
-    <footer class="text-center py-12 text-sm text-gray-500 mt-24">
+    <footer class="text-center py-10 text-sm text-gray-500">
       &copy; 2025 Jasper Ling
     </footer>
   </body>
